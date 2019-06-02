@@ -3,7 +3,7 @@
 donwload() {
 	wget -P . https://github.com/chrislusf/seaweedfs/releases/latest
 	wget -P . https://github.com/$(egrep -o 'chrislusf/seaweedfs/releases/download/.*/linux_arm64.tar.gz' latest)
-	tar -C . -xzvf linux_arm64.tar.gz
+	tar -C . -xzvf linux_arm64.tar.gz && rm -f linux_arm64.tar.gz
 }
 
 clean() {

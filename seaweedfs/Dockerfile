@@ -1,4 +1,4 @@
-FROM arm64v8/alpine
+FROM arm64v8/alpine:3.9
 
 # volume server gprc port
 EXPOSE 18080
