@@ -1,5 +1,5 @@
 # Dockerfile for arm64
-Right now `Do Not support cross-build` arm64 docker image on x86 host system.
+Right now `Do support cross-build` arm64 docker image on x86 host system.
 
 ## seaweedfs
 Run command below on arm64 host system against docker engine:
@@ -13,3 +13,8 @@ cd seaweedfs && sh build.sh
 
 ## gcc-golang
 Build image to support gcc 9 and golang 1.12.5 simultaneously.
+
+## crossbulid
+Cross build arm64 binary on x86 host system based on cross-compile toolchain of aarch64.Support
+- build cpp
+- build golang
