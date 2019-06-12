@@ -21,7 +21,7 @@ case "$1" in
 	;;
 
   'server')
-  	ARGS="-ip `hostname -i` -dir /data"
+  	ARGS="-ip `hostname -i` -dir /data/volume -master.dir=/data/master"
   	if [ -n "$MASTER_PORT_9333_TCP_ADDR" ] ; then
 		ARGS="$ARGS -master.peers=$MASTER_PORT_9333_TCP_ADDR:$MASTER_PORT_9333_TCP_PORT"
 	fi
